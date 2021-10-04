@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
+
+:root {
+  --font-color: #eee;
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light: rgba(0, 0, 0, 0.6);
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: var(--background-dark);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 180px;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+}
+
+.logo h4 {
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  margin-right: 180px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+nav a:hover {
+  transform: translateY(-10%);
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  background-image: url("images/oven.jpg");
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.85;
+}
+
+.hero-text {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.order {
+  background-color: #ef4035;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  padding: 20px;
+  margin-top: 55px;
+}
+
+.order:hover {
+  background-color: #620000;
+  text-decoration: underline;
+}
+
+.giftcard-text {
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: 150px;
+}
+
+.img-wrapper {
+  display: inline-block;
+  width: 1000px;
+  height: 1000px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f7e8;
+  height: 500px;
+  width: 500px;
+  color: black;
+  margin-top: 85px;
+  margin-left: -75px;
+}
+
+.display-one {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.card-text {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.card-text h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.card-text p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-button {
+  display: inline-block;
+
+  background-color: #ef4035;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  padding: 20px;
+}
+
+.card-button:hover {
+  background-color: #620000;
+  text-decoration: underline;
+}
+
+.display-two {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+.card-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f7e8;
+  height: 450px;
+  width: 500px;
+  color: black;
+  margin-top: 110px;
+  margin-right: -95px;
+}
+
+.img-wrapper2 {
+  display: inline-block;
+  width: 1000px;
+  height: 1000px;
+  z-index: -7;
+}
+
+.img2 {
+  width: 100%;
+  height: auto;
+  z-index: -7;
+}
+
+footer {
+  display: block;
+  height: 160px;
+  background-color: var(--background-dark);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.icons {
+  background-color: white;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: black;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+footer h2:hover {
+  transform: translateY(-10%);
+  text-decoration: underline;
+}
+
+//about
+
+#about-page {
+  margin: 20px;
+  padding: 20px;
+}
+
+.about {
+  padding: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.para1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+.para1text {
+  text-align: center;
+}
+
+.para2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+.para2text {
+  width: 400px;
+}
+
+.para3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+.aboutimg3 {
+  width: 800px;
+  margin-top: 30px;
+  align-self: center;
+}
+
+//menu
+
+.menu-page {
+  height: 100px;
+  width: auto;
+}
+
+.menu-header {
+  text-align: center;
+}
